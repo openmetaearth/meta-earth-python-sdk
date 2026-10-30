@@ -1,0 +1,11 @@
+syntax = "proto3";
+package metaearth.common;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/openmetaearth/me-hub/x/common/types";
+
+enum Status {
+  PENDING = 0;
+  FINALIZED = 1;
+}

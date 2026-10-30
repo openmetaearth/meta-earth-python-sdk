@@ -1,0 +1,9 @@
+{
+  "contract_sha256": "d55055593b1377fc2d0865e59f0c71a03bb7c687f864922c3e56cc66b072a81a",
+  "output_sha256": {
+    "NOTICE.txt": "0ea10746709f491eefaa3de9f759f8529fa4f601e6b4cf0f593522b7c15fddb1",
+    "admission.json": "cb7ebd2f4d2c74097023a396d5c2b0e62766c4700730afb9205cbd77476daef9",
+    "protocol.pb": "2f1ee50dac69a75d0ca018f9b9c13148b634cd72284ac9d43bb6d9e4b8a2dda9"
+  },
+  "schema_version": 1
+}

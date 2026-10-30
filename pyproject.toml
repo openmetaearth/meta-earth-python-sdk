@@ -1,0 +1,87 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "meta-earth-python-sdk"
+version = "0.1.0.dev0"
+description = "An asynchronous Hub SDK for Meta Earth (development preview)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "cosmpy==0.12.2",
+  "protobuf==5.29.6",
+  "grpcio>=1.66,<2",
+  "httpx>=0.28,<0.29",
+  "pydantic>=2.10,<3",
+  "ecdsa==0.19.2",
+  "pycryptodome==3.24.1",
+  "bech32==1.2.0",
+  "eth-account==0.13.7",
+  "eth-utils==6.0.0",
+  "eth-abi==6.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9",
+  "pytest-asyncio>=0.25,<0.26",
+  "pytest-cov>=6,<7",
+  "ruff>=0.11,<0.12",
+  "mypy>=1.15,<1.16",
+  "types-protobuf>=5.29,<6",
+  "build>=1.2,<2",
+  "hatchling>=1.27,<2",
+  "jsonschema==4.26.0",
+  "coincurve==21.0.0",
+]
+protocol = [
+  "grpcio-tools==1.71.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/meta_earth_sdk"]
+artifacts = [
+  "src/meta_earth_sdk/_generated/protocol.pb",
+  "src/meta_earth_sdk/_generated/admission.json",
+  "src/meta_earth_sdk/_generated/NOTICE.txt",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/.gitignore", "/.github/workflows/ci.yml", "/src", "/tests", "/examples",
+  "/tools", "/pyproject.toml", "/README.md", "/constraints-dev.txt",
+  "/constraints-protocol.txt", "/docs/COMPATIBILITY.md", "/docs/CODE_READING_GUIDE.md",
+  "/docs/SDK_USAGE.md", "/docs/METAEARTH_PROTO_GUIDE.md", "/proto/vendor",
+  "/proto/closure-lock.json", "/proto/scope-inventory.json",
+  "/proto/runtime-admission.json", "/proto/runtime-admission-output.json",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+markers = ["live: explicitly enabled read-only private-chain integration"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "ASYNC"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src/meta_earth_sdk"]
+
+[[tool.mypy.overrides]]
+module = ["cosmpy.*", "grpc.*"]
+ignore_missing_imports = true
+
+[tool.coverage.run]
+source = ["meta_earth_sdk"]
+
+[tool.coverage.report]
+show_missing = true

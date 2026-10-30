@@ -1,0 +1,12 @@
+syntax = "proto3";
+package metaearth.wstaking;
+
+option go_package = "github.com/openmetaearth/me-hub/x/wstaking/types";
+
+message Meid {
+  string account = 1;
+  string creator = 2;
+  string regionId = 3;
+  string regionName = 4;
+  int32 RewardType = 5;
+}

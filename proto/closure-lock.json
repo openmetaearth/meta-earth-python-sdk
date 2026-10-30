@@ -1,0 +1,1453 @@
+{
+  "descriptor": {
+    "path": "src/meta_earth_sdk/_generated/protocol.pb",
+    "sha256": "2f1ee50dac69a75d0ca018f9b9c13148b634cd72284ac9d43bb6d9e4b8a2dda9"
+  },
+  "files": [
+    {
+      "dependencies": [
+        "google/protobuf/descriptor.proto"
+      ],
+      "name": "amino/amino.proto",
+      "sha256": "92cf51f824e354d7f7ae416b00ed35de04b93fd34b8ab1a7db3632a48cb29c9f"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto"
+      ],
+      "name": "cosmos/auth/v1beta1/auth.proto",
+      "sha256": "7185a0c37f62c95c80932b5c3deab3efeae7ad1355d097c300c8211b782ebb6b"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "google/api/annotations.proto",
+        "cosmos/auth/v1beta1/auth.proto",
+        "cosmos_proto/cosmos.proto",
+        "cosmos/query/v1/query.proto"
+      ],
+      "name": "cosmos/auth/v1beta1/query.proto",
+      "sha256": "134edb575487e668058a9d0e7139a882813308c6f33794faf23d7ffa6639754d"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "cosmos_proto/cosmos.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/msg/v1/msg.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/bank/v1beta1/bank.proto",
+      "sha256": "bfdebb0fdbfa24d3c5376d342c76a0f2f55dad4b6b5591077747b880668460f7"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/bank/v1beta1/bank.proto",
+        "cosmos_proto/cosmos.proto",
+        "cosmos/query/v1/query.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/bank/v1beta1/query.proto",
+      "sha256": "d4f0fe25483a6c52b059ac74dd958ebca8fa21670db74db705936c3c9bdb1fbc"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/bank/v1beta1/bank.proto",
+        "cosmos_proto/cosmos.proto",
+        "cosmos/msg/v1/msg.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/bank/v1beta1/tx.proto",
+      "sha256": "e8f81f26bf481577bb958b2cbae3c82b057e7e1ca49dc92515fe91d9fcc34689"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "tendermint/abci/types.proto",
+        "tendermint/types/block.proto",
+        "google/protobuf/any.proto"
+      ],
+      "name": "cosmos/base/abci/v1beta1/abci.proto",
+      "sha256": "ed0c671fdbb2a3fac43a62026137d4d7d06553aae7cab7ffacebace803badf37"
+    },
+    {
+      "dependencies": [],
+      "name": "cosmos/base/query/v1beta1/pagination.proto",
+      "sha256": "4deed58493b0c6da8e1caf1481d1a91f58af1b97fd00b670819494e19b4a8968"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "google/api/annotations.proto",
+        "tendermint/p2p/types.proto",
+        "tendermint/types/types.proto",
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "cosmos/base/tendermint/v1beta1/types.proto",
+        "cosmos_proto/cosmos.proto",
+        "tendermint/types/block.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/base/tendermint/v1beta1/query.proto",
+      "sha256": "563d64daa1868812648c670af37082e870a0a0fc71bb87ed27c6e1d103505a21"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "tendermint/types/types.proto",
+        "tendermint/types/evidence.proto",
+        "tendermint/version/types.proto",
+        "google/protobuf/timestamp.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/base/tendermint/v1beta1/types.proto",
+      "sha256": "27c13a433c2cb3a98ed281153d10655b0038932872f186ed9b875126821a5aef"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "cosmos_proto/cosmos.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/base/v1beta1/coin.proto",
+      "sha256": "b80e0fb4ac8948cdf07f6141e7e98cf5d51abcc1ddc7eede659f9708b626a382"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "cosmos/crypto/ed25519/keys.proto",
+      "sha256": "f7e382d683e4a1c9ea5d64a74955cf3c82c31b46521db89437067336c458aa87"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/crypto/multisig/keys.proto",
+      "sha256": "a7628e3e3e2403a70918b59538e4014db63d962dab018c8f2952c1cdc02b5ea8"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "cosmos/crypto/multisig/v1beta1/multisig.proto",
+      "sha256": "37233956398267a5118602c95bb3a835e54248dbb4a82dcff2eb2115410d32b5"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "cosmos/crypto/secp256k1/keys.proto",
+      "sha256": "ea733d053d5c5820193ecf4eba2da2d14bbd2caa912c322fc29fab34f4a33a24"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "cosmos/crypto/secp256r1/keys.proto",
+      "sha256": "0382a412c5e57cacad1402da11ca3cf53b852ae1e159796ec4a5cb3404bd0732"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "google/protobuf/any.proto",
+        "google/protobuf/duration.proto",
+        "cosmos_proto/cosmos.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/gov/v1/gov.proto",
+      "sha256": "ed954d21dcea97eb220a6e82ae3765cfb37656ffd092e7a4eee068c9a1a0dd3b"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "google/api/annotations.proto",
+        "cosmos/gov/v1/gov.proto",
+        "cosmos_proto/cosmos.proto"
+      ],
+      "name": "cosmos/gov/v1/query.proto",
+      "sha256": "35fecc87352f126f45e820bbc8fed1639f6030880a5293e207501b16a9292453"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/gov/v1/gov.proto",
+        "gogoproto/gogo.proto",
+        "cosmos_proto/cosmos.proto",
+        "google/protobuf/any.proto",
+        "cosmos/msg/v1/msg.proto",
+        "amino/amino.proto",
+        "google/protobuf/timestamp.proto"
+      ],
+      "name": "cosmos/gov/v1/tx.proto",
+      "sha256": "b37d30cf677381255bebc9a18ea70364467057992388b6b4531d7f0717731696"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "google/protobuf/any.proto",
+        "google/protobuf/duration.proto",
+        "cosmos_proto/cosmos.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/gov/v1beta1/gov.proto",
+      "sha256": "20ce4e4a3328490111f83380ecdbad68d888e0bcc180b105f6bf25c9af911aaf"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/gov/v1beta1/gov.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "cosmos/msg/v1/msg.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/gov/v1beta1/tx.proto",
+      "sha256": "9c9a4218be4996db55162024d4d4cc86549624f455bdbb91777984b63c0cf21a"
+    },
+    {
+      "dependencies": [
+        "google/protobuf/descriptor.proto"
+      ],
+      "name": "cosmos/msg/v1/msg.proto",
+      "sha256": "feb30d250df135d7152a333a7f07b18e33714ccf344d89601aa15b71f90ef723"
+    },
+    {
+      "dependencies": [
+        "google/protobuf/any.proto"
+      ],
+      "name": "cosmos/nft/v1beta1/nft.proto",
+      "sha256": "de6272e0cd3d14d5ad9e86e7548339f50516b270b1ba05554e9e509873b4be04"
+    },
+    {
+      "dependencies": [
+        "google/protobuf/descriptor.proto"
+      ],
+      "name": "cosmos/query/v1/query.proto",
+      "sha256": "867fecb6fba81d62fb42401bd5c8b955203cafd5b901255951a6c3f28134a30a"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "cosmos/staking/v1beta1/staking.proto",
+        "cosmos_proto/cosmos.proto",
+        "cosmos/query/v1/query.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/staking/v1beta1/query.proto",
+      "sha256": "f219e540f4a0802daccc30a9580dc0febedf9024f979ff36e3e59737b312cf40"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "google/protobuf/duration.proto",
+        "google/protobuf/timestamp.proto",
+        "cosmos_proto/cosmos.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "amino/amino.proto",
+        "tendermint/types/types.proto",
+        "tendermint/abci/types.proto"
+      ],
+      "name": "cosmos/staking/v1beta1/staking.proto",
+      "sha256": "f23f0c16b29b3a858b7a8386203e160727f48700124c0f700db43a2d9acf830c"
+    },
+    {
+      "dependencies": [
+        "google/protobuf/any.proto",
+        "google/protobuf/timestamp.proto",
+        "gogoproto/gogo.proto",
+        "cosmos_proto/cosmos.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/staking/v1beta1/staking.proto",
+        "cosmos/msg/v1/msg.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/staking/v1beta1/tx.proto",
+      "sha256": "24ccdc4dd4f648381e745f06ea20413a54c24b86da8d17d8058395743590959c"
+    },
+    {
+      "dependencies": [
+        "cosmos/crypto/multisig/v1beta1/multisig.proto",
+        "google/protobuf/any.proto"
+      ],
+      "name": "cosmos/tx/signing/v1beta1/signing.proto",
+      "sha256": "c2a7491a28d395806b275952c57da7064fecd0eff84b92b9da7413894d6525f4"
+    },
+    {
+      "dependencies": [
+        "google/api/annotations.proto",
+        "cosmos/base/abci/v1beta1/abci.proto",
+        "cosmos/tx/v1beta1/tx.proto",
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "tendermint/types/block.proto",
+        "tendermint/types/types.proto"
+      ],
+      "name": "cosmos/tx/v1beta1/service.proto",
+      "sha256": "8b4d310aa593aad8dae12edcb1b81d6adae8b61e44a40ca48567574ddad6b783"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "gogoproto/gogo.proto",
+        "cosmos/crypto/multisig/v1beta1/multisig.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/tx/signing/v1beta1/signing.proto",
+        "google/protobuf/any.proto",
+        "cosmos_proto/cosmos.proto"
+      ],
+      "name": "cosmos/tx/v1beta1/tx.proto",
+      "sha256": "6496c4f1b05096077c246a50af70d2aa2f6efab759c984b4d7a742116c7efc4f"
+    },
+    {
+      "dependencies": [
+        "google/protobuf/any.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "cosmos_proto/cosmos.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmos/upgrade/v1beta1/upgrade.proto",
+      "sha256": "7b6f482ed5ab1aab09838959f089153c4d2d293c2d30b240c3a5f238cdc025a6"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "gogoproto/gogo.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/auth/v1beta1/auth.proto"
+      ],
+      "name": "cosmos/vesting/v1beta1/vesting.proto",
+      "sha256": "634f4733116ea8a68c7749e95e4f27f407bf14fd6a836a3dc92e57827fe7402d"
+    },
+    {
+      "dependencies": [
+        "google/protobuf/descriptor.proto"
+      ],
+      "name": "cosmos_proto/cosmos.proto",
+      "sha256": "e94a35e52b4362dc7dc188fe35dfca383d2ce43d711c8deb87ac072082e6337d"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "cosmwasm/wasm/v1/types.proto",
+        "google/api/annotations.proto",
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "cosmos/query/v1/query.proto",
+        "amino/amino.proto",
+        "cosmos_proto/cosmos.proto"
+      ],
+      "name": "cosmwasm/wasm/v1/query.proto",
+      "sha256": "d543a86c80b3a33930444dc25fb11d0dd14583196f040d07ec74b5e79cb13b7d"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/msg/v1/msg.proto",
+        "gogoproto/gogo.proto",
+        "cosmwasm/wasm/v1/types.proto",
+        "cosmos_proto/cosmos.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmwasm/wasm/v1/tx.proto",
+      "sha256": "e2ba250f20783d4393bbcc33970326b5b19086aa33e1f8778d6faae297395445"
+    },
+    {
+      "dependencies": [
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "amino/amino.proto"
+      ],
+      "name": "cosmwasm/wasm/v1/types.proto",
+      "sha256": "b40782e08b3908dd1935623bcb5be81fcaa57c0ed7b303b5ffcc9016afa0a3b8"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "ethermint/crypto/v1/ethsecp256k1/keys.proto",
+      "sha256": "fcb21df7273093cfbd35312c5c2a4d97bafcb7b87550a75c919482bf066934ab"
+    },
+    {
+      "dependencies": [
+        "cosmos/auth/v1beta1/auth.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "ethermint/types/v1/account.proto",
+      "sha256": "299777b16ebce401c2cda773f5ff2d5c7967857c3dbea726c2574e78e49243fb"
+    },
+    {
+      "dependencies": [
+        "google/protobuf/descriptor.proto"
+      ],
+      "name": "gogoproto/gogo.proto",
+      "sha256": "56f29a53ae543e242236e98f50b22d81826ec2972ee81cc3a3dfe6afde8e3e8a"
+    },
+    {
+      "dependencies": [
+        "google/api/http.proto",
+        "google/protobuf/descriptor.proto"
+      ],
+      "name": "google/api/annotations.proto",
+      "sha256": "ef21918d20db956e3a173f1a39316668d3c1289f5c73110dd101b98124e4dd85"
+    },
+    {
+      "dependencies": [],
+      "name": "google/api/http.proto",
+      "sha256": "7010a59785ed7aef4a3b7fe897cfcf7528869b3776194545f2c89ed361e928f4"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "google/protobuf/any.proto",
+      "sha256": "d25945141c197377dfde138dc93d0516ce1ddb31f0a081e178d7c8e5402c6a08"
+    },
+    {
+      "dependencies": [],
+      "name": "google/protobuf/descriptor.proto",
+      "sha256": "b552a1e98b7769dbf8662f79d2adb5528ceb491dea981ff3e827d511096eb03d"
+    },
+    {
+      "dependencies": [],
+      "name": "google/protobuf/duration.proto",
+      "sha256": "623658ab5764fddc75283b29c9e740f500a43cbae015a572ccbce8a28396af0f"
+    },
+    {
+      "dependencies": [],
+      "name": "google/protobuf/timestamp.proto",
+      "sha256": "422a163a2d7051465e0a516584b4d96d18c270ec4e7ad3c21ad33e5c440ebecc"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "ibc/applications/transfer/v1/transfer.proto",
+        "google/api/annotations.proto"
+      ],
+      "name": "ibc/applications/transfer/v1/query.proto",
+      "sha256": "88df214e233a5c01578a33f588ff560e32e7794502640b8a35476809e5d0462a"
+    },
+    {
+      "dependencies": [],
+      "name": "ibc/applications/transfer/v1/transfer.proto",
+      "sha256": "0263399dfb288988fa7ce47a0fff82320f3c308b9c7b5532c5f3c69391dd6b7c"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "gogoproto/gogo.proto",
+        "cosmos/msg/v1/msg.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "ibc/core/client/v1/client.proto",
+        "ibc/applications/transfer/v1/transfer.proto"
+      ],
+      "name": "ibc/applications/transfer/v1/tx.proto",
+      "sha256": "88fcb82e149791967a29186d60a71000b827492a340f0a48de68b1bae54ca2e6"
+    },
+    {
+      "dependencies": [],
+      "name": "ibc/applications/transfer/v2/packet.proto",
+      "sha256": "0b1b05c35f72026282e21b1bee213b889f45e64c47f850eceabcad781d7a6c4c"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "ibc/core/client/v1/client.proto"
+      ],
+      "name": "ibc/core/channel/v1/channel.proto",
+      "sha256": "017b7c7a6bc88f64c6e407a2a1770e33039c0d1a44e2cb0f0f45996ab984a25e"
+    },
+    {
+      "dependencies": [
+        "cosmos/upgrade/v1beta1/upgrade.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto"
+      ],
+      "name": "ibc/core/client/v1/client.proto",
+      "sha256": "95507a0b14ad7c0d87c9335284e05368b6d91491b2ba7699c344300eb65a92ac"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/common/completion_hook.proto",
+      "sha256": "e4aff65fb35eed91d9ea52f671f228b3a8eb857473fd61d4692df0f8a17638d0"
+    },
+    {
+      "dependencies": [
+        "ibc/core/channel/v1/channel.proto",
+        "metaearth/common/status.proto"
+      ],
+      "name": "metaearth/common/rollapp_packet.proto",
+      "sha256": "d3abede3ca1cee35cca40c536ab2bb5e5466dd3b5d57b2f84b55c75f69c2da9a"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/common/status.proto",
+      "sha256": "d0cdf6ac6db7e1f62a3812c7a1b0e3db962ec24b013254ed2ed0d257f22ffec4"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/dao/dao.proto",
+      "sha256": "9b30065b1cbed0eb91d9181fd7b6a3cac57f90af5226d8f8176b7f2938c5f7a0"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "metaearth/dao/dao.proto"
+      ],
+      "name": "metaearth/dao/genesis.proto",
+      "sha256": "22a889e01868c6bbbbee827e8b43ce4dc835dda0e0951c70c659fbbdb7d76ee4"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "metaearth/dao/dao.proto"
+      ],
+      "name": "metaearth/dao/query.proto",
+      "sha256": "08ebb1abffe4a8d0c0cd275920178f92d11589a82c4c50b7e08f50c7fc1fd647"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/dao/dao.proto"
+      ],
+      "name": "metaearth/dao/tx.proto",
+      "sha256": "5b6cb290e1100cb7d07dc221579d3f49f20854796851f260356db87109eafcef"
+    },
+    {
+      "dependencies": [
+        "metaearth/common/rollapp_packet.proto"
+      ],
+      "name": "metaearth/delayedack/events.proto",
+      "sha256": "565abc0a88970ab8add8af2b3086cc4bb9efffa1a4556726d63a1a028d2bc5b6"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "metaearth/common/rollapp_packet.proto",
+        "metaearth/delayedack/params.proto"
+      ],
+      "name": "metaearth/delayedack/genesis.proto",
+      "sha256": "1225d722e38689bb43adb509700f895ae14a9b705641f5ba474e77b3c91e6e9c"
+    },
+    {
+      "dependencies": [
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/delayedack/params.proto",
+      "sha256": "83bd9d1769dadab4122b4eba0f41680fbe8d84cdb94abf7e4a81516d2ade7895"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "metaearth/common/rollapp_packet.proto",
+        "metaearth/common/status.proto",
+        "metaearth/delayedack/params.proto"
+      ],
+      "name": "metaearth/delayedack/query.proto",
+      "sha256": "aca563b018c81cc34d3a71bacff16e2a9e98d18dd8d00424d8ff746cd659f428"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/common/rollapp_packet.proto",
+        "metaearth/delayedack/params.proto"
+      ],
+      "name": "metaearth/delayedack/tx.proto",
+      "sha256": "62c614b42182dd72ec8b20503bdc0d83d47f29149551088501c96399d80ea20c"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/denommetadata/events.proto",
+      "sha256": "5b2132665e43ce8ed23c0d53161c8a3054cdaf145ff66ea3950d1488d524b9e7"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/denommetadata/genesis.proto",
+      "sha256": "2f4af185e06a7da41e47d40cb32c13fa1e259459aebc36ac12904f268624f1a5"
+    },
+    {
+      "dependencies": [
+        "cosmos/bank/v1beta1/bank.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/denommetadata/gov_denommetadata.proto",
+      "sha256": "d021c46f794f87eb3b96be935ff78c34ed09ffb52477f6b19ea385913ea26513"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto"
+      ],
+      "name": "metaearth/denommetadata/tx.proto",
+      "sha256": "b4aef6bd956346744eeb4aa723d7150ba05ff3a8fc0b072cabe72323b56e5f16"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/did/credential.proto",
+      "sha256": "3010a40306b91cd1c7779e2a57dc1acc5130240d6278c8f715cf1f01a507bbf1"
+    },
+    {
+      "dependencies": [
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "metaearth/did/credential.proto"
+      ],
+      "name": "metaearth/did/did.proto",
+      "sha256": "48d1ba6b8615e74a58625f9967771a60bca4673feeaee853c46064de96933262"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/did/filter.proto",
+      "sha256": "4751546878330ccc78ee26c493f2485fe861605be6049864a19305473b414b40"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "metaearth/did/credential.proto",
+        "metaearth/did/did.proto",
+        "metaearth/did/filter.proto",
+        "metaearth/did/issuer.proto"
+      ],
+      "name": "metaearth/did/genesis.proto",
+      "sha256": "612a378252a6dd4631e76fa1e21b993006fa3bb58e83832c2d7725cac9cc10e0"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/did/issuer.proto",
+      "sha256": "6f834f51f8fa3fc1d09ce4a8bf5cd41975d9151b78cd3c0d6faec80b507c6bfd"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "metaearth/did/credential.proto",
+        "metaearth/did/did.proto",
+        "metaearth/did/filter.proto",
+        "metaearth/did/issuer.proto"
+      ],
+      "name": "metaearth/did/query.proto",
+      "sha256": "c685c769f8062e0cb599ef4fab900d0180bfc743fabdee0d5c6259ced37a7c1d"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/did/did.proto",
+        "metaearth/did/filter.proto",
+        "metaearth/did/issuer.proto"
+      ],
+      "name": "metaearth/did/tx.proto",
+      "sha256": "f049c1658ab8731aedae968451d041ef0579c83ad79db147854061e38c120cd7"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/eibc/authz.proto",
+      "sha256": "2feaa64a101c9c825db35cb7922efebfd88957184e0460921c07705c1fed1967"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/common/completion_hook.proto",
+        "metaearth/common/rollapp_packet.proto",
+        "metaearth/common/status.proto"
+      ],
+      "name": "metaearth/eibc/demand_order.proto",
+      "sha256": "60e6d618e68e490a9f576efe908b1051f575e97f5834fccfcacc3224f5954650"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/common/status.proto"
+      ],
+      "name": "metaearth/eibc/events.proto",
+      "sha256": "b7e59e706df34e92fffc5b0eeec004bea284b3130defd2c70a5e285c52d70c39"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "metaearth/eibc/demand_order.proto",
+        "metaearth/eibc/params.proto"
+      ],
+      "name": "metaearth/eibc/genesis.proto",
+      "sha256": "e8fe36be6ad613664c9f297dd75ab7782c879a910a044827d9f04f30148b5753"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/common/rollapp_packet.proto",
+        "metaearth/common/status.proto"
+      ],
+      "name": "metaearth/eibc/lp.proto",
+      "sha256": "048fa6ef161b08f337ff750fe008c59b92f45c7c2ae0af246ea5c1b6bfba81e5"
+    },
+    {
+      "dependencies": [
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/eibc/params.proto",
+      "sha256": "7734845e000cb969f50095da88b0fa5c36b5563d2bbb73fbd6ca5e83c388fb87"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "metaearth/common/rollapp_packet.proto",
+        "metaearth/common/status.proto",
+        "metaearth/eibc/demand_order.proto",
+        "metaearth/eibc/lp.proto",
+        "metaearth/eibc/params.proto"
+      ],
+      "name": "metaearth/eibc/query.proto",
+      "sha256": "aa11870a5364f7ce9a77f84df6e398103f735a8e0b2b29e39f613cf4ff2b9633"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/msg/v1/msg.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/eibc/lp.proto",
+        "metaearth/eibc/params.proto"
+      ],
+      "name": "metaearth/eibc/tx.proto",
+      "sha256": "c38eed9eda0d9ca6f208ddfed9ec2644fd4e6272ec84bbed7a98a623a12bce0d"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "metaearth/gravity/v1/tx.proto",
+        "metaearth/gravity/v1/types.proto"
+      ],
+      "name": "metaearth/gravity/v1/genesis.proto",
+      "sha256": "024fda9ff9009fed299e37da6542d8e85b1c9757b297030463359af58eeaa101"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "google/protobuf/any.proto",
+        "metaearth/gravity/v1/tx.proto",
+        "metaearth/gravity/v1/types.proto"
+      ],
+      "name": "metaearth/gravity/v1/query.proto",
+      "sha256": "05f0170d00dae7f227d2413c801a75c092cabb187dc2a969690587bec64ab639"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/msg/v1/msg.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/gravity/v1/types.proto"
+      ],
+      "name": "metaearth/gravity/v1/tx.proto",
+      "sha256": "6a1df06d85c4cb78d35592471d6ef349b21264ae71bfad7ad9b3e1a00baa6e84"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto"
+      ],
+      "name": "metaearth/gravity/v1/types.proto",
+      "sha256": "a6d6db5d3480b59cb45934f4a85b94f5fa3083256c7b7d2045e9b540d48604ac"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "metaearth/did/did.proto",
+        "metaearth/kyc/kyc_event_seq.proto",
+        "metaearth/kyc/protocol.proto"
+      ],
+      "name": "metaearth/kyc/genesis.proto",
+      "sha256": "74951baf110e9734afc3a13f39c64c03a4736df6ebb0d8d6b4dc6e30771f4d77"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/kyc/kyc_event_seq.proto",
+      "sha256": "46d8c37dec3f2327f5095762d55012263393d3fadc34b07003e1770d1060ab33"
+    },
+    {
+      "dependencies": [
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/did/issuer.proto"
+      ],
+      "name": "metaearth/kyc/protocol.proto",
+      "sha256": "51583fdc9865efdacad8bb44a29b2736696d5acc58fe3a64cb0c5e8d39bd65e3"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "cosmos/nft/v1beta1/nft.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "metaearth/did/credential.proto",
+        "metaearth/did/did.proto",
+        "metaearth/kyc/kyc_event_seq.proto",
+        "metaearth/kyc/protocol.proto"
+      ],
+      "name": "metaearth/kyc/query.proto",
+      "sha256": "ce8dc671473cdfe9b653bacbba125f08c08c2591252483e7b7d5e1431467d22c"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "metaearth/did/did.proto"
+      ],
+      "name": "metaearth/kyc/tx.proto",
+      "sha256": "d8b24800794330c5811f549a475ea92995f6761a28d4b9251a30a7f98ce38894"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/lightclient/events.proto",
+      "sha256": "64e320d348171cf03105e9a74454d37d6330e76efe4635a032047b3cfcba8f2b"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/lightclient/genesis.proto",
+      "sha256": "de1e093d35ed9fb0ca1155aab4ba35a777a2a67ae10288ffc493e63ca5d67d2e"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "google/protobuf/any.proto"
+      ],
+      "name": "metaearth/lightclient/query.proto",
+      "sha256": "45f64a1f90b620bf9a14f079e7971b581421167c5a93466901d3b6c8491bc1be"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "google/protobuf/any.proto"
+      ],
+      "name": "metaearth/lightclient/tx.proto",
+      "sha256": "ffb741cdcfe92ad36af052221668e0173eeba02db7400bf09874abadaadf9f9f"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "metaearth/megroup/group_info.proto",
+        "metaearth/megroup/group_member.proto",
+        "metaearth/megroup/group_member_count.proto",
+        "metaearth/megroup/member_joined.proto",
+        "metaearth/megroup/params.proto"
+      ],
+      "name": "metaearth/megroup/genesis.proto",
+      "sha256": "a9ef5228d9002ad9f39dd58aedf28e76741433f2a8b573074f34837b7cddf089"
+    },
+    {
+      "dependencies": [
+        "metaearth/megroup/group_info.proto"
+      ],
+      "name": "metaearth/megroup/group.proto",
+      "sha256": "77358ce62e734e1641a46be1f17afea1928267509cdc57d09202161fbe4a9411"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto"
+      ],
+      "name": "metaearth/megroup/group_info.proto",
+      "sha256": "c8b25b7193d8dc7ee86cbafc6d5a79ea2111da402201613dbeb0b1daddf42af3"
+    },
+    {
+      "dependencies": [
+        "metaearth/megroup/member.proto"
+      ],
+      "name": "metaearth/megroup/group_member.proto",
+      "sha256": "785a4f73a2026c1145571db7f1b008eaab404155b787243096293f46dfa92e6e"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/megroup/group_member_count.proto",
+      "sha256": "8f0bb6aa7fdf49c556121c3e39a30bcaaa4a25d0796ea172f42079012588eea1"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto"
+      ],
+      "name": "metaearth/megroup/member.proto",
+      "sha256": "4203f0140cc3969d11e10ba4c0293b0dea06b52510f2bdca7980f133fe29516d"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/megroup/member_joined.proto",
+      "sha256": "34f67e22f0fa1d6c7070217f6d9c87a9f0fe9b917d2f28a9193a34bd8cb6e7ce"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/megroup/params.proto",
+      "sha256": "ad26a3ad9454602f441af6f6d9ef03065ef31dd67b42db1527914d07d5aabe80"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "metaearth/megroup/group_info.proto",
+        "metaearth/megroup/group_member.proto",
+        "metaearth/megroup/group_member_count.proto",
+        "metaearth/megroup/member_joined.proto",
+        "metaearth/megroup/params.proto"
+      ],
+      "name": "metaearth/megroup/query.proto",
+      "sha256": "f51b08c2362ddff56b7fb2636abb6bd745980cd06f3c8df56171a86ef7ee8fac"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto",
+        "metaearth/megroup/group_info.proto"
+      ],
+      "name": "metaearth/megroup/tx.proto",
+      "sha256": "fe75dd854e44eab002bdff060811edb3ab90310c2c5128dcd0a843a4bd55a2ba"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/staking/v1beta1/staking.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "google/protobuf/duration.proto",
+        "google/protobuf/timestamp.proto",
+        "tendermint/abci/types.proto",
+        "tendermint/types/types.proto"
+      ],
+      "name": "metaearth/migratetest/validator.proto",
+      "sha256": "b0e7323e117587d4e1b65102fe7c5197a76d6da1e7c0e828cfc6dc215af28141"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/rollapp/app.proto",
+      "sha256": "fa3a6a063d1dc590eb51022724d200921745c362ce0d74ffbe1de4fee6d9461e"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto"
+      ],
+      "name": "metaearth/rollapp/block_descriptor.proto",
+      "sha256": "1f8477cc81df4fb646f011f3b0dde429488ae6c68ce73dfb84e161bd99e7002a"
+    },
+    {
+      "dependencies": [
+        "metaearth/rollapp/app.proto"
+      ],
+      "name": "metaearth/rollapp/events.proto",
+      "sha256": "270987455be8f84e6b04ae7d8efd5e5d11fb125d9967acbfc68b25c6a090ae87"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "metaearth/rollapp/app.proto",
+        "metaearth/rollapp/liveness.proto",
+        "metaearth/rollapp/params.proto",
+        "metaearth/rollapp/rollapp.proto",
+        "metaearth/rollapp/state_info.proto"
+      ],
+      "name": "metaearth/rollapp/genesis.proto",
+      "sha256": "b741bf22af6d9cf8e8fb355bd179c71b846c90fe3567e0203db9411034b83df2"
+    },
+    {
+      "dependencies": [
+        "cosmos/bank/v1beta1/bank.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "ibc/applications/transfer/v2/packet.proto",
+        "metaearth/rollapp/genesis_info.proto",
+        "metaearth/rollapp/metadata.proto"
+      ],
+      "name": "metaearth/rollapp/genesis_bridge_data.proto",
+      "sha256": "7db552c7c0fae31c03b3924957394156b0bc603e8747b1e91a4acd17c73a6c39"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "metaearth/rollapp/metadata.proto"
+      ],
+      "name": "metaearth/rollapp/genesis_info.proto",
+      "sha256": "ccf5fc8a7214de2ea5ca94f060688dae1021348e96c93a89e3ec902f229a1416"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/rollapp/state_info.proto"
+      ],
+      "name": "metaearth/rollapp/liveness.proto",
+      "sha256": "993ef87144f64f7d95315b4faed858b66bc732b49c1864859689d17bebe9ee92"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/rollapp/metadata.proto",
+      "sha256": "399aa9bdc2e1d034c70ed10560bf4fa98cac6457cfa414dc05c8e227c589fcb4"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/rollapp/params.proto",
+      "sha256": "4e4eb4e4ac743c99584bdacad57240cddc46b619fcfd9a4269ea371a15f7c913"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/rollapp/genesis_info.proto"
+      ],
+      "name": "metaearth/rollapp/proposals.proto",
+      "sha256": "7443219726be56b028f793f47c6b820e8301203aba4847c52594f2a7783b1474"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "metaearth/rollapp/app.proto",
+        "metaearth/rollapp/genesis_bridge_data.proto",
+        "metaearth/rollapp/params.proto",
+        "metaearth/rollapp/rollapp.proto",
+        "metaearth/rollapp/state_info.proto"
+      ],
+      "name": "metaearth/rollapp/query.proto",
+      "sha256": "e2afaf2371d11019d4e6f864fbd4ff7fadee1f9f9c9168b7ef37595d5ee9e631"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "metaearth/rollapp/genesis_info.proto",
+        "metaearth/rollapp/metadata.proto",
+        "metaearth/rollapp/state_info.proto"
+      ],
+      "name": "metaearth/rollapp/rollapp.proto",
+      "sha256": "d82a600ecc7dfda3fd1c70f6abf5bc38574fdf461288fe567e7219e6ac2be198"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "metaearth/common/status.proto",
+        "metaearth/rollapp/block_descriptor.proto"
+      ],
+      "name": "metaearth/rollapp/state_info.proto",
+      "sha256": "5396e225ada6dbbc4861e53bb0dea4f1a6528240dc26ad17ad65cc2c983917f0"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/msg/v1/msg.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/rollapp/block_descriptor.proto",
+        "metaearth/rollapp/genesis_info.proto",
+        "metaearth/rollapp/metadata.proto",
+        "metaearth/rollapp/params.proto",
+        "metaearth/rollapp/rollapp.proto"
+      ],
+      "name": "metaearth/rollapp/tx.proto",
+      "sha256": "49717f538f8668c3538c54df3ef22eaadd5526f253ed7cdc01d873da7e3e9e28"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/sequencer/events.proto",
+      "sha256": "298d562dcd89915c8ed7df18a982c1d268d10b7be997d048beda2f3be59cdb4e"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "metaearth/sequencer/params.proto",
+        "metaearth/sequencer/sequencer.proto"
+      ],
+      "name": "metaearth/sequencer/genesis.proto",
+      "sha256": "c6800c99f434a9e2f5f1f1b10f5e3ac58efdcf6e78b8e158f23c76cbdba40dbf"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/sequencer/metadata.proto",
+      "sha256": "efe737a61200639fc5c66a714bce679fa2cc56800231bd07ececc71391db5132"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/sequencer/operating_status.proto",
+      "sha256": "fd4a7ecf3aae6639fe44d5eca22476e303c96d75462caa8181f8171082edab24"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/duration.proto"
+      ],
+      "name": "metaearth/sequencer/params.proto",
+      "sha256": "72bae37ccf23073ff2dc49868d888cab65405386cf7d21a4c7bbc83e80e44f57"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "metaearth/sequencer/operating_status.proto",
+        "metaearth/sequencer/params.proto",
+        "metaearth/sequencer/sequencer.proto",
+        "metaearth/sequencer/tx.proto"
+      ],
+      "name": "metaearth/sequencer/query.proto",
+      "sha256": "39c56d50fd035bb110400075fd28595e857fc16eb858eff9ec7383efab4d7f84"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "google/protobuf/timestamp.proto",
+        "metaearth/sequencer/metadata.proto",
+        "metaearth/sequencer/operating_status.proto"
+      ],
+      "name": "metaearth/sequencer/sequencer.proto",
+      "sha256": "6638311f2956b7bd190243cffccf617087a9db35417ea3120bb9146b0749095b"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/msg/v1/msg.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "google/protobuf/timestamp.proto",
+        "metaearth/sequencer/metadata.proto",
+        "metaearth/sequencer/params.proto"
+      ],
+      "name": "metaearth/sequencer/tx.proto",
+      "sha256": "cc8c5b4af8e175e23ad6d66a9333e909a216eaf618230a5974e89363d9475fcf"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/gov/v1/gov.proto",
+        "cosmos/query/v1/query.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto"
+      ],
+      "name": "metaearth/wgov/query.proto",
+      "sha256": "3ca612b610695c2aa3fd1190b5f18d6adb31cc13899ef6bbb5d8a0951da4d0c8"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/wnft/data.proto",
+      "sha256": "2fa5d6d0c4c30561298bdee64f2990714e2feb1fd28e01bd31ebdf85f09db086"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/wnft/event.proto",
+      "sha256": "495810499bc8a4459330c8bfa0bd3d3793375594b8f57973e90c7edbdfd126ef"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto"
+      ],
+      "name": "metaearth/wnft/query.proto",
+      "sha256": "2655d1a5f16a1019906c3b11b0a32d5abde044d8cf1fac25143261d8ba742865"
+    },
+    {
+      "dependencies": [
+        "cosmos/msg/v1/msg.proto",
+        "cosmos_proto/cosmos.proto"
+      ],
+      "name": "metaearth/wnft/tx.proto",
+      "sha256": "c15855324e17252b931b50f4901fb858d8713840b53b6fb6d2a6dab8190192b3"
+    },
+    {
+      "dependencies": [
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/duration.proto",
+        "google/protobuf/timestamp.proto"
+      ],
+      "name": "metaearth/wstaking/fixed_deposit.proto",
+      "sha256": "81de2a94dfa2daf19cada6d24ffa99d1844829e49cbe26d6c5026c8a637899c4"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos/staking/v1beta1/staking.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "metaearth/wstaking/fixed_deposit.proto",
+        "metaearth/wstaking/meid.proto",
+        "metaearth/wstaking/region.proto",
+        "metaearth/wstaking/stake.proto"
+      ],
+      "name": "metaearth/wstaking/genesis.proto",
+      "sha256": "450a96aeb0e0f5b1a097049e1731799e215844136e2eca8994c22f7a51a2643b"
+    },
+    {
+      "dependencies": [],
+      "name": "metaearth/wstaking/meid.proto",
+      "sha256": "32b0ef114cd41c8afd6bf76694831ef7dd3be26dbb9910f066f65c4156892e9e"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos/base/query/v1beta1/pagination.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/query/v1/query.proto",
+        "cosmos/staking/v1beta1/query.proto",
+        "cosmos/staking/v1beta1/staking.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/api/annotations.proto",
+        "google/protobuf/timestamp.proto",
+        "metaearth/wstaking/fixed_deposit.proto",
+        "metaearth/wstaking/record.proto",
+        "metaearth/wstaking/region.proto",
+        "metaearth/wstaking/stake.proto"
+      ],
+      "name": "metaearth/wstaking/query.proto",
+      "sha256": "746f915a5b28c76cb50674e7337bb0d33bb3157f861e159c1f1f6902eab39c5e"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "metaearth/wstaking/record.proto",
+      "sha256": "24f95271cd34b4c3c038858682e78728f157575346dfe2e387a0b4cf9ccc47c8"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "tendermint/types/types.proto"
+      ],
+      "name": "metaearth/wstaking/region.proto",
+      "sha256": "358e7245d322b9bbe78dc4f8e2721be2c0b254f8b6d8b378de4dad35bbf39215"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "tendermint/types/types.proto"
+      ],
+      "name": "metaearth/wstaking/stake.proto",
+      "sha256": "f58b057fcb9aa5f44474079b645e01086c6e9fc3027bfcd2b20a8b4be6130c88"
+    },
+    {
+      "dependencies": [
+        "amino/amino.proto",
+        "cosmos/base/v1beta1/coin.proto",
+        "cosmos/msg/v1/msg.proto",
+        "cosmos/staking/v1beta1/staking.proto",
+        "cosmos_proto/cosmos.proto",
+        "gogoproto/gogo.proto",
+        "google/protobuf/any.proto",
+        "google/protobuf/timestamp.proto",
+        "ibc/applications/transfer/v1/transfer.proto",
+        "ibc/core/client/v1/client.proto",
+        "metaearth/wstaking/fixed_deposit.proto",
+        "metaearth/wstaking/region.proto"
+      ],
+      "name": "metaearth/wstaking/tx.proto",
+      "sha256": "94fe1d9eb34b66627334abd64d802c87b2e6db8dab13bd04d5cf7598f2b774b2"
+    },
+    {
+      "dependencies": [
+        "tendermint/crypto/proof.proto",
+        "tendermint/crypto/keys.proto",
+        "tendermint/types/params.proto",
+        "tendermint/types/validator.proto",
+        "google/protobuf/timestamp.proto",
+        "gogoproto/gogo.proto"
+      ],
+      "name": "tendermint/abci/types.proto",
+      "sha256": "eeb2a84229a4caa59f9093ecef7328bdc6372939bc752355585a68344cb52c94"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "tendermint/crypto/keys.proto",
+      "sha256": "db41301d71b42909cf65b8624f84e2bd1148db590e7d36b2b783f41456b2cf2b"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "tendermint/crypto/proof.proto",
+      "sha256": "cf6e4d99af82ee230d2a55c7dcdc255c66649799f1f3b30ad9edc16d4f280476"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "tendermint/p2p/types.proto",
+      "sha256": "d18cd9d12a9bf5b9e30b5dd253c47a9c5445c203e619eec31a88ec16e5428db1"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "tendermint/types/types.proto",
+        "tendermint/types/evidence.proto"
+      ],
+      "name": "tendermint/types/block.proto",
+      "sha256": "465266bb8df3225142bb9b7058f99996f838c577b97345daf62c89b43316dfe9"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "tendermint/types/types.proto",
+        "tendermint/types/validator.proto"
+      ],
+      "name": "tendermint/types/evidence.proto",
+      "sha256": "80398540275c72062f6a55dee35e66c78f177b786b7b17c48aa01489984c3f85"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "google/protobuf/duration.proto"
+      ],
+      "name": "tendermint/types/params.proto",
+      "sha256": "6fe4a254f21dba7835ecf7c982f915d9ea782ce8bee758fb5851eb0f5144abd9"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "google/protobuf/timestamp.proto",
+        "tendermint/crypto/proof.proto",
+        "tendermint/version/types.proto",
+        "tendermint/types/validator.proto"
+      ],
+      "name": "tendermint/types/types.proto",
+      "sha256": "95f842110ac397f05d7c3ff6dab039dd278de4b6f84b78a33320f1c6e41b22f0"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto",
+        "tendermint/crypto/keys.proto"
+      ],
+      "name": "tendermint/types/validator.proto",
+      "sha256": "679b0c7f8765c2ce9e983e5b1d59c4a780330f4ac18652ea5fa8fa7a85f4e94e"
+    },
+    {
+      "dependencies": [
+        "gogoproto/gogo.proto"
+      ],
+      "name": "tendermint/version/types.proto",
+      "sha256": "392ba7ced9e92f30201ce17c23e701d4ab6d7810d656beb05fcca8cd5e2d9410"
+    }
+  ],
+  "notice": {
+    "path": "src/meta_earth_sdk/_generated/NOTICE.txt",
+    "sha256": "0ea10746709f491eefaa3de9f759f8529fa4f601e6b4cf0f593522b7c15fddb1"
+  },
+  "schema_version": 2
+}

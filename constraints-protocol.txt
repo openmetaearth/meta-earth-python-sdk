@@ -1,0 +1,5 @@
+# Additional constraints for optional protobuf compiler tools.
+# Apply alongside constraints-dev.txt.
+grpcio-tools==1.71.0
+jsonschema==4.26.0
+setuptools==84.2.1

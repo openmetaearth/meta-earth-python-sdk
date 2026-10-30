@@ -1,0 +1,46 @@
+name: CI
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  sdk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install dependencies
+        run: python -m pip --isolated install --index-url https://pypi.org/simple -c constraints-dev.txt -e '.[dev]'
+      - name: Check dependencies and code
+        run: |
+          python -m pip check
+          ruff check src tests examples tools
+          mypy
+      - name: Test SDK without live endpoints
+        run: pytest -m 'not live'
+      - name: Verify bundled protocol resources
+        run: |
+          python -I -B tools/generate_runtime_protocol.py --output-dir "$RUNNER_TEMP/runtime-protocol"
+          for name in protocol.pb admission.json NOTICE.txt; do
+            cmp "src/meta_earth_sdk/_generated/$name" "$RUNNER_TEMP/runtime-protocol/$name"
+          done
+      - name: Build and install wheel
+        run: |
+          python -m build --no-isolation
+          python -m pip --isolated install --no-deps --force-reinstall dist/*.whl
+      - name: Check installed package outside source tree
+        working-directory: ${{ runner.temp }}
+        run: |
+          python -I -B "$GITHUB_WORKSPACE/tools/smoke_install.py"
+          python -I -B "$GITHUB_WORKSPACE/tools/check_m2_vectors.py" --fixtures "$GITHUB_WORKSPACE/tests/fixtures/m2/js_vectors.json"
